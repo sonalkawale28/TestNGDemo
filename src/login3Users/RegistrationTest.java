@@ -36,6 +36,7 @@ public class RegistrationTest {
 	driver.findElement(By.xpath("//input[@name='login']")).click();
 	System.out.println("user has login successfully");
 	driver.findElement(By.linkText("SIGN-ON")).click();
+	System.out.println("SIGN-ON page is displayed");
   }
   @BeforeMethod
   public void getAllcookies()
