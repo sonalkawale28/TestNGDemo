@@ -36,7 +36,7 @@ public class RegistrationTest {
 	driver.findElement(By.xpath("//input[@name='login']")).click();
 	System.out.println("user has login successfully");
 	driver.findElement(By.linkText("SIGN-ON")).click();
-	System.out.println("SIGN-ON page is displayed");
+	
   }
   @BeforeMethod
   public void getAllcookies()
@@ -56,7 +56,7 @@ public class RegistrationTest {
 	  System.out.println("captureScreenShot under AfterMethod");
 	  File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	  FileUtils.copyFileToDirectory(src, new File("F:\\JAVA.TestNG-workspace\\TestNGdemo\\Screenstot"));
-	  System.out.println("screenshot has captured successfully");
+	  
   }
 
 
